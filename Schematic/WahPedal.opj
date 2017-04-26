@@ -12,10 +12,13 @@
     (CompileFileAddedOrDeleted "x"))
   (Folder "Outputs")
   (Folder "Referenced Projects")
-  (MPSSessionName "cjtul")
+  (MPSSessionName "tulowieckic")
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources" ".\wahpedal.dsn")
+      (Path "Design Resources" ".\wahpedal.dsn" "root")
+      (Path "Design Resources" ".\wahpedal.dsn" "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" ".\wahpedal.olb")
       (Select "Design Resources" "Library" ".\wahpedal.olb"))
@@ -23,17 +26,20 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 283"))
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 283"))
       (Tab 0))
     (Doc
-      (Type "COrPartDoc")
+      (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 104 1434 104 426")
-        (PackageScroll "0 0")
-        (PackageZoom "1")
-        (PartPackage "Part")
-        (Scroll "743 148")
-        (Zoom "159"))
+        (Placement "44 0 1 -1 -1 -8 -30 50 1694 50 519")
+        (Scroll "-274 0")
+        (Zoom "108")
+        (Occurrence "/"))
       (Path
-         "C:\Users\cjtul\Box Sync\Baylor\Semester 8\Embedded Systems\Final Project\Schematic\wahpedal.OLB")
-      (Package "TEENSY3.2"))))
+         "H:\SEMESTER 8\EMBEDDED SYSTEMS\ELC-4438-WAH-PEDAL\SCHEMATIC\WAHPEDAL.DSN")
+      (Schematic "root")
+      (Page "WahPedal")))
+  (PartMRUSelector
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))))
