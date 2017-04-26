@@ -14,7 +14,7 @@
     (CompileFileAddedOrDeleted "x"))
   (Folder "Outputs")
   (Folder "Referenced Projects")
-  (MPSSessionName "tulowieckic")
+  (MPSSessionName "cjtul")
   (GlobalState
     (FileView
       (Path "Design Resources")
@@ -22,22 +22,23 @@
       (Path "Design Resources" ".\wahpedal.dsn" "root")
       (Path "Design Resources" ".\wahpedal.dsn" "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library" ".\wahpedal.olb"))
+      (Path "Design Resources" "Library" ".\wahpedal.olb")
+      (Select "Design Resources" ".\wahpedal.dsn" "root" "WahPedal"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 283"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 283"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 50 1694 50 519")
-        (Scroll "-236 -8")
-        (Zoom "108")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1382 52 374")
+        (Scroll "-229 300")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "H:\SEMESTER 8\EMBEDDED SYSTEMS\ELC-4438-WAH-PEDAL\SCHEMATIC\WAHPEDAL.DSN")
+         "C:\USERS\CJTUL\BOX SYNC\BAYLOR\SEMESTER 8\EMBEDDED SYSTEMS\FINAL PROJECT\ELC-4438-WAH-PEDAL\SCHEMATIC\WAHPEDAL.DSN")
       (Schematic "root")
       (Page "WahPedal")))
   (PartMRUSelector
