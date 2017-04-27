@@ -10,49 +10,46 @@
 
 // Audio Setup
 AudioFilterBiquad wahFilter;
-//AudioSynthWaveform       SquareWave;      //xy=251.1999969482422,178.1999969482422
 AudioInputI2S            i2sIn;
-AudioOutputI2S           i2sOut;           //xy=584.2000370025635,210.20001745224
+AudioOutputI2S           i2sOut;          
 AudioConnection          patchCord0(i2sIn, wahFilter);
 AudioConnection          patchCord1(wahFilter, 0, i2sOut, 0);
 AudioConnection          patchCord2(wahFilter, 0, i2sOut, 1);
-AudioControlSGTL5000     codec;     //xy=216.1999969482422,91.19999694824219
+AudioControlSGTL5000     codec; 
 
-unsigned long filterLow = 300;           // Hz
-unsigned long filterHigh = 5000;     // HZ
-unsigned int filterQ = 2.2;
+unsigned long filterLow = 300;  // Hz
+unsigned long filterHigh = 5000;  // HZ
+unsigned int filterQ = 2.2;  // Quality Factor
 
 
   
 
 void setup() {
-  // ADC Setup
+  
+  // Initialize Pins
   Serial.begin(115200);
   pinMode(TEENSY_A0, INPUT);
   pinMode(TEENSY_D21, INPUT);
 
-  
-
-  AudioMemory(18);
-  
-  codec.enable();
-  codec.lineInLevel(12);
+  // Initialize Audio Processing
+  AudioMemory(18);  
+  codec.enable();  
+  codec.lineInLevel(12); 
   codec.volume(0.7);
   AudioNoInterrupts();
-  
-
-  //SquareWave.begin(0.5, 50, WAVEFORM_SQUARE);
-  
   AudioProcessorUsageMaxReset();
   AudioMemoryUsageMaxReset();
   AudioInterrupts();
 
 }
 
+// Initialize Variables
 int pedalPosition;
 bool stompSwitch = true;
 
 void loop() {
+
+  // Read Inputs
   stompSwitch = digitalRead(TEENSY_D21);
   pedalPosition = map(analogRead(TEENSY_A0), 0, 1023, filterLow, filterHigh);
 
@@ -66,7 +63,5 @@ void loop() {
     // Turn off the filter
     wahFilter.setLowpass(0, 5000, filterQ);
   }
-  
-  Serial.print("Pedal Position = ");
-  Serial.println(pedalPosition);
+
 }
