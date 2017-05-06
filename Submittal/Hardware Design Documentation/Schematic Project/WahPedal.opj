@@ -1,0 +1,68 @@
+(ExpressProject "WahPedal"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\wahpedal.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_16.6\tools\capture\library\capsym.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\wahpedal.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (MPSSessionName "CJ")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\wahpedal.dsn")
+      (Path "Design Resources" ".\wahpedal.dsn" "root")
+      (Path "Design Resources" ".\wahpedal.dsn" "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" ".\wahpedal.olb")
+      (Select "Design Resources" ".\wahpedal.dsn" "root" "WahPedal"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 283"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1639 52 626")
+        (Scroll "-372 -7")
+        (Zoom "113")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\CJ\BOX SYNC\BAYLOR\SEMESTER 8\EMBEDDED SYSTEMS\FINAL PROJECT\ELC-4438-WAH-PEDAL\SUBMITTAL\HARDWARE DESIGN DOCUMENTATION\SCHEMATIC\WAHPEDAL.DSN")
+      (Schematic "root")
+      (Page "WahPedal")))
+  (PartMRUSelector
+    ("CONN JACK PWR"
+      (FullPartName "CONN JACK PWR.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("SW SPDT"
+      (FullPartName "SW SPDT.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PHONEJACK
+      (FullPartName "PHONEJACK.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.6\tools\capture\library\pspice"))
